@@ -1289,7 +1289,7 @@ class WhisperGenerationMixin(GenerationMixin):
         generation_config.return_token_timestamps = return_token_timestamps
         if return_token_timestamps:
             generation_config.return_dict_in_generate = True
-            generation_config.output_attentions = True
+            generation_config.output_attentions = False
             generation_config.output_scores = True
 
         if logprob_threshold is not None:
